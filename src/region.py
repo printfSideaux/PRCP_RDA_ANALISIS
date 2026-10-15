@@ -16,19 +16,22 @@ a geometrias (pontos, linhas, polígonos) e operações espaciais.
 -> geobr, utilizada para baixar malhas oficiais do Brasil
  (como municípios e estados) do IBGE.
 
-Esse script processa arquivos CSV de precipitação, cruza as coordenadas
+ Esse script processa arquivos CSV de precipitação, cruza as coordenadas
 com a malha de municípios e gera novos CSVs com informações de município, estado,
 UF e região para cada ponto de precipitação.
+
+como copiei e colei o codigo de outra pasta separada, talvez n funcione vou arrumar dps
+EVITEM RODAR KKKKKKKKKK (uma vez e nunca mais)
 
 """
 
 import glob                      
 import os                       
 import pandas as pd             
-import geopandas as gpd       
+import geopandas as gpd 
 import geobr              
 
-PATH = "CSV"  # pasta onde ficam os CSVs
+PATH = "DATA/CSV_original"  # pasta onde ficam os CSVs
 PADRAO = os.path.join(PATH, "precipitacao_*.csv") # padrão de busca: CSV/precipitacao_<qualquer coisa>.csv
 SEP = ";"  # separador de colunas dos CSVs
 COL_LAT, COL_LON = "lat", "lon"  # nomes das colunas de latitude e longitude

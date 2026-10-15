@@ -15,6 +15,10 @@ e verificar caminhos de arquivos e diretórios no computador.
 
 Esse script baixa os arquivos de precipitação do CPC (Climate Prediction Center) para os anos de 2007 a 2026.
 
+EVITEM RODAR KKKKKKKKKK demora muito e é muito pesado. (uma vez e nunca mais)
+
+como copiei e colei o codigo de outra pasta separada, talvez n funcione vou arrumar dps
+
 '''
 
 import requests 
